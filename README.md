@@ -21,7 +21,7 @@ flutter pub add firebase_messaging
 至[FirebaseCLI](https://firebase.google.com/docs/cli?hl=zh-tw)下載
 
 
-**Linux**
+**Linux/MacOS**
 ```
 curl -sL https://firebase.tools | bash
 ```
