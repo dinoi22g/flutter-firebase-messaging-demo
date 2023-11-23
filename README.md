@@ -1,4 +1,4 @@
-# Firebase Messaging 範例
+# Firebase Messaging Demo
 
 ## 基本設置
 
