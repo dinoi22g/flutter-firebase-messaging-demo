@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,15 +49,6 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBHau_IQNWy_N3KaxIJsW5mZvizsvW1Tp0',
-    appId: '1:282788916457:web:225da9a77a33804f4ed478',
-    messagingSenderId: '282788916457',
-    projectId: 'firebase-message-demo',
-    authDomain: 'fir-message-demo-2ab40.firebaseapp.com',
-    storageBucket: 'firebase-message-demo.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCUE_Ie29vZ_rO34S4s8C4bW9WVkvXuyCo',
     appId: '1:282788916457:android:2b1135cdad7ad3e64ed478',
@@ -62,19 +59,10 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBAbPQJZNCgEUBJIO8zz7LSTAo_u-LHEkg',
-    appId: '1:282788916457:ios:a879cd61de5a5dc34ed478',
+    appId: '1:282788916457:ios:e8794a57853977c94ed478',
     messagingSenderId: '282788916457',
     projectId: 'firebase-message-demo',
     storageBucket: 'firebase-message-demo.appspot.com',
-    iosBundleId: 'com.example.firebaseMessageDemo',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBAbPQJZNCgEUBJIO8zz7LSTAo_u-LHEkg',
-    appId: '1:282788916457:ios:c453d7e9afdd120e4ed478',
-    messagingSenderId: '282788916457',
-    projectId: 'firebase-message-demo',
-    storageBucket: 'firebase-message-demo.appspot.com',
-    iosBundleId: 'com.example.firebaseMessageDemo.RunnerTests',
+    iosBundleId: 'com.dino.firebaseMessageDemo',
   );
 }
