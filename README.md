@@ -53,6 +53,7 @@ flutterfire configure
 ### 6. 設定Android
 
 - **確保使用的模擬器有GOOGLE PLAY服務**
+- **必須編譯成release才能夠在關閉時仍接受訊息**
 
 - **android/build.gradle**
 ```
