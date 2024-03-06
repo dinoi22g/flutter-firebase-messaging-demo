@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "282788916457",
+    "project_id": "firebase-message-demo",
+    "storage_bucket": "firebase-message-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282788916457:android:2b1135cdad7ad3e64ed478",
+        "android_client_info": {
+          "package_name": "com.example.firebase_message_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUE_Ie29vZ_rO34S4s8C4bW9WVkvXuyCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
